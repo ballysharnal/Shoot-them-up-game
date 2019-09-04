@@ -8,17 +8,27 @@ let config = {
         preload: preload,
         create: create,
         update: update
-    }
+    },
+    pixelArt: true,
+    physics: {
+        default: 'arcade',
+        arcade: {
+            gravity: { y: 300 },
+            debug: false
+        }
+    },
 };
 
-let game: Phaser.Game = new Phaser.Game(config)
+let game = new Phaser.Game(config)
 
 function preload ()
 {
+    this.load.image('background', '../assets/background.jpg')
 }
 
 function create ()
 {
+    this.add.image(0,60, "background");
 }
 
 function update ()
