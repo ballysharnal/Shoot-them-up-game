@@ -1,0 +1,28 @@
+{
+  "name": "shmup",
+  "version": "1.0.0",
+  "description": "small game for fun :)",
+  "main": "main.ts",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GitPAV/Shoot-them-up-game.git"
+  },
+  "keywords": [
+    "shmup",
+    "small",
+    "game"
+  ],
+  "author": "GitPAV / Ballysharnal",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/GitPAV/Shoot-them-up-game/issues"
+  },
+  "homepage": "https://github.com/GitPAV/Shoot-them-up-game#readme",
+  "dependencies": {
+    "nodemon": "^1.19.2",
+    "typescript": "^3.6.2"
+  }
+}
