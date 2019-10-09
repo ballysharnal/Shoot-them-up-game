@@ -1,28 +1,20 @@
 {
-  "name": "shmup",
-  "version": "1.0.0",
-  "description": "small game for fun :)",
-  "main": "main.ts",
+  "name": "Shmup",
+  "version": "0.1.0",
+  "description": "Shmup game (Phaser 3 + TypeScript)",
+  "main": "index.js",
   "scripts": {
-    "test": "test"
+    "build": "webpack",
+    "start": "webpack --watch & live-server --port=3000"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/GitPAV/Shoot-them-up-game.git"
-  },
-  "keywords": [
-    "shmup",
-    "small",
-    "game"
-  ],
-  "author": "GitPAV / Ballysharnal",
+  "author": "Bally + GitPAV",
   "license": "WTFPL",
-  "bugs": {
-    "url": "https://github.com/GitPAV/Shoot-them-up-game/issues"
-  },
-  "homepage": "https://github.com/GitPAV/Shoot-them-up-game#readme",
-  "dependencies": {
-    "nodemon": "^1.19.2",
-    "typescript": "^3.6.2"
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "phaser": "^3.19.0",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.6.2",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8"
   }
 }
