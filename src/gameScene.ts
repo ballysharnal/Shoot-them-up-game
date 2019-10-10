@@ -3,7 +3,7 @@ export class GameScene extends Phaser.Scene {
 
     background: Phaser.GameObjects.Image;
     backgroundLoop: Phaser.GameObjects.Image;
-
+    
     constructor() {
         super({
             key: "GameScene"
