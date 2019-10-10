@@ -1,26 +1,19 @@
-/** @type {import("../typings/phaser")} */
+import "phaser";
+import { GameScene } from "./gameScene";
 
-let config = {
-    type: Phaser.AUTO,
-    width: 800,
-    height: 600,
-    scene: {
-        preload: preload,
-        create: create,
-        update: update
-    }
+const config: Phaser.Types.Core.GameConfig = {
+  title: "Shmup",
+  width: 800,
+  height: 600,
+  parent: "game",
+  backgroundColor: "#18216D", 
+  scene: [GameScene]
 };
-
-let game: Phaser.Game = new Phaser.Game(config)
-
-function preload ()
-{
+export class ShmupGame extends Phaser.Game {
+  constructor(config: Phaser.Types.Core.GameConfig) {
+    super(config);
+  }
 }
-
-function create ()
-{
-}
-
-function update ()
-{
-}
+window.onload = () => {
+  var game = new ShmupGame(config);
+};
